@@ -26,7 +26,7 @@ namespace Gronsfeld
 
         private void StartCoder_Click(object sender, EventArgs e)
         {
-            int[] keys = "2718".Select(ch => (int)Char.GetNumericValue(ch)).ToArray();
+            int[] keys = "2143658790".Select(ch => (int)Char.GetNumericValue(ch)).ToArray();
             string s = Convert.ToString(Coder.Text);
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < s.Length; i++)
@@ -35,10 +35,16 @@ namespace Gronsfeld
                 Encoder.Text = Convert.ToString(sb);
             }
         }
-
+        #region Text
         private void Encoder_TextChanged(object sender, EventArgs e)
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }
